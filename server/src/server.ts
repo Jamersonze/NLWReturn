@@ -1,7 +1,12 @@
 import express from 'express'
+import cors from 'cors'
 import { router } from './routes'
 
 const app = express()
+
+app.use(cors(
+    // Aqui voce define quais clientes podem acessar esse servidor
+))
 
 app.use(express.json())
 

@@ -14,4 +14,4 @@ app.use(express.json())
 
 app.use(router)
 
-app.listen(port, () => console.log(`Its alive! And leaving through port ${port}`));
+app.listen(port, () => console.log(`Its alive!`));
